@@ -2,7 +2,7 @@ package itmo.laboratory.lesson1;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         texts(); // 1 - Выведите строки в следующем порядке
         System.out.println(ravno1(46, 10, 3)); //2- Посчитайте результат выражения
@@ -20,21 +20,21 @@ public class main {
         System.out.println("Java.");
     }
 
-    public static int ravno1(int a, int b, int c) {
-        int sum;
-        sum = (a + b) * (b / c);
+    public static double ravno1(int a, int b, int c) {
+        double sum;
+        sum = (a + b) * ((double)b / c);
         return sum;
     }
 
     public static int ravno2(int a, int b, int c) {
         int sum;
-        sum = (a) * (b) * (c);
+        sum = a * b * c;
         return sum;
     }
 
-    public static int reshenije1() {
+    public static double reshenije1() {
         int number = 10500;
-        int result = (number / 10) / 10;
+        double result = (number / (double)10) / 10;
         return result;
     }
 
